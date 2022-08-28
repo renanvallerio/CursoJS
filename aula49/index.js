@@ -19,12 +19,15 @@ funcaoArrow()
 
 // Dentro de um objeto
 const obj = {
-  // falar: function () {
-  falar() {
+  falar: function () {
     console.log('Estou falando...')
+  },
+  dizer() {
+    console.log('Estou dizendo...')
   }
 }
 obj.falar()
+obj.dizer()
 
 // Teste
 let i = 0
