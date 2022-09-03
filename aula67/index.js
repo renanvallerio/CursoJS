@@ -1,0 +1,25 @@
+// Reduce -> Reduz um array a um único elemento
+
+// Some todos os números (Reduce)
+// Retorne um array com pares (Filter)
+// Retorne um array com o dobro dos valores (Map)
+
+const numeros = [5, 50, 80, 1, 2, 3, 5, 8, 7, 11, 15, 22, 27]
+const total = numeros.reduce((acumulador, valor) => (acumulador += valor))
+console.log(total)
+
+// Retorne a pessoa mais velha
+const pessoas = [
+  { nome: 'Luiz', idade: 62 },
+  { nome: 'Maria', idade: 23 },
+  { nome: 'Eduardo', idade: 105 },
+  { nome: 'Letícia', idade: 19 },
+  { nome: 'Rosana', idade: 64 },
+  { nome: 'Wallace', idade: 1000 }
+]
+
+const maisVelha = pessoas.reduce((save, obj) => {
+  if (save.idade > obj.idade) return save
+  return obj
+})
+console.log(maisVelha)
